@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexHub - Dashboard</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="topbar">
+        <img src="assets/images/logo.png" alt="" class="logo">
+        <div class="options">
+            <label>Dashboard</label>
+            <label onclick="alert('WIP')">Messages</label>
+            <label onclick="alert('WIP')">Documents</label>
+            <label onclick="alert('WIP')">Posts</label>
+            <label for="" id="pB" onclick="window.location.href = 'panel.html'">Panel</label>
+            <img src="assets/images/settings.png" alt="" id="setOpen">
+        </div>
+
+        <label id="vsd">v</label>
+
+        <div class="userdis">
+            <img src="assets/images/logo.png" alt="" id="pfp">
+            <label for="" id="userdis">username</label>
+        </div>
+    </div>
+    <div style="margin: 10pt;" class="pop">
+        <h1 id="welUdis" style="font-weight: lighter;">Welcome</h1>
+        <div class="infobar">
+            <div class="titl">
+                <label for="">Latest Updates</label>
+            </div>
+            <div class="other">
+                <label for="" style="font-weight: bold;">Updates</label>
+                <li>v1.0.0 released</li>
+                <li>Full Permenant Storage</li>
+                <li>Security Features In Place</li>
+            </div>
+        </div>
+        <div class="infobar">
+            <div class="titl">
+                <label for="">Announcement</label>
+            </div>
+            <div class="other">
+                <p id="annV">...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="setM" id="setM">
+        <img src="assets/images/close.png" alt="" id="mClose">
+        <div style="display: flex; flex-direction: row; height: 100%;">
+            <div class="opBar">
+                <label for="" onclick="signout()">Sign out</label>
+            </div>
+        </div>
+    </div>
+    <div id="block">
+        
+    </div>
+    <div id="popup">
+        <div id="errorP" class="log">
+            <img src="assets/images/error.png" alt="" style="width: 40pt;" id="popupS">
+            <h2 style="font-weight: lighter;" id="popupM">An error has occured!</h2>
+            <label id="popupMM">Error</label>
+        </div>
+    </div>
+    <script src="assets/js/dashload.js"></script>
+</body>
+</html>

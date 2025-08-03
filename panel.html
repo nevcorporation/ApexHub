@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexHub - Panel</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="topbar">
+        <img src="assets/images/logo.png" alt="" class="logo">
+        <div class="options">
+            <label onclick="window.location.href = 'index.html'">Dashboard</label>
+            <label onclick="alert('WIP')">Messages</label>
+            <label onclick="alert('WIP')">Documents</label>
+            <label onclick="alert('WIP')">Posts</label>
+            <label for="" id="pB">Panel</label>
+            <img src="assets/images/settings.png" alt="" id="setOpen">
+        </div>
+        <label id="vsd">v</label>
+        <div class="userdis">
+            <img src="assets/images/logo.png" alt="" id="pfp">
+            <label for="" id="userdis">username</label>
+        </div>
+    </div>
+    <div style="margin: 10pt;" class="pop">
+        <h1 style="font-weight: lighter; text-align: center;">Panel</h1>
+        <h3>User List</h3>
+        <div id="userM">
+
+        </div>
+        <h3>Selected User Manager</h3>
+        <div class="uMang">
+            <label>Username</label>
+            <label id="userV" class="infbox">..</label>
+            <label>Password</label>
+            <input type="text" id="passV">
+            <label>Level</label>
+            <input type="text" id="lvlV">
+            <label for="">Profile Picture</label>
+            <input type="text" id="pfpV">
+            <label for="">Warning, the user may have to sign out for visible changes..</label>
+            <div class="subBut" onclick="saveForum()">
+                Update
+            </div>
+        </div>
+        <h3>Account Creation</h3>
+        <div class="uMang">
+            <label for="">Username</label>
+            <input type="text" id="userS">
+            <label for="">Password</label>
+            <input type="text" id="passS">
+            <label for="">Profile Picture</label>
+            <input type="text" id="pfpS">
+            <label for="">Make sure to verify the users exist by selecting it in the user manager</label>
+            <div class="subBut" onclick="signup()">
+                Signup
+            </div>
+        </div>
+        <h3>Authorize Manager</h3>
+        <div class="uMang">
+            <label>Authorization Code</label>
+            <input type="text" id="codeV">
+            <div class="subBut" onclick="authCode()">
+                Create
+            </div>
+        </div>
+        <h3>Form Requests</h3>
+        <div class="fors" id="fors">
+        </div>
+        <h3>Website Management</h3>
+        <div class="uMang">
+            <label>Announcement</label>
+            <input type="text" id="annI">
+            <label for="">Version</label>
+            <input type="text" id="verI">
+            <div class="subBut" onclick="updateInfo()">
+                Update
+            </div>
+        </div>
+    </div>
+    <div class="setM" id="setM">
+        <img src="assets/images/close.png" alt="" id="mClose">
+        <div style="display: flex; flex-direction: row; height: 100%;">
+            <div class="opBar">
+                <label onclick="signout()">Sign out</label>
+            </div>
+        </div>
+    </div>
+    <div id="block">
+        
+    </div>
+    <div id="popup">
+        <div id="errorP" class="log">
+            <img src="assets/images/error.png" alt="" style="width: 40pt;" id="popupS">
+            <h2 style="font-weight: lighter;" id="popupM">An error has occured!</h2>
+            <label id="popupMM">Error</label>
+        </div>
+    </div>
+    <script src="assets/js/dashload.js"></script>
+    <script src="assets/js/panel.js"></script>
+</body>
+</html>
